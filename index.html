@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>30-60 Timer</title>
 </head>
 <body>
     <audio id="notificationNoise">
@@ -12,9 +13,32 @@
         <source src="./assets/lego yoda death.wav" type="audio/wav">
     </audio>
 
-    <button id="startTimer">
-        Start Timer!
-    </button>
+    <section class="w-screen h-screen grid items-center">
+    <article class="flex flex-col">
+    <!--Navbar-->
+    <nav class="bg-red-500 rounded-lg mx-8 my-2 p-4">
+        <!--Title/Type of Timer-->
+        <div id="header" class="w-100 text-center text-5xl font-mono font-extrabold text-rose-100">30-60 Timer</div>
+    </nav>
+        
+
+    <!--Timer Block-->
+    <section class="flex justify-center flex-col">
+        <!--Number Block-->
+        <div id="timeCounter" class="bg-orange-500 w-100 text-center mx-8 my-2 px-4 py-24 rounded-lg text-5xl font-mono font-extrabold text-amber-200">Click below to begin!</div>
+
+        <!--Button Block-->
+        <section class="flex">
+            <!--Start Button-->
+            <button id="startButton" class="flex-1 bg-lime-400 text-center ml-8 mr-4 rounded-lg text-2xl font-mono font-extrabold text-emerald-100">START</button>
+            
+            <!--Stop Button-->
+            <button id="stopButton" class="flex-1 bg-red-600 text-center mr-8 ml-4 rounded-lg text-2xl font-mono font-extrabold text-rose-100">STOP</button>
+        </section>
+    </section>
+
+    </article>
+    </section>
 
 
     <script src="./index.js"></script>
