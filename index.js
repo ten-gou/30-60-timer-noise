@@ -4,7 +4,7 @@ const startButtonEl = document.getElementById('startButton');
 const stopButtonEl = document.getElementById('stopButton');
 const headerEl = document.getElementById('header');
 
-const Run = 30;
+const Run = 5;
 const Rest = 60;
 const timeRun = Run * 1000;
 const timeRest = Rest * 1000;
