@@ -1,4 +1,5 @@
 const audioEl = document.getElementById('notificationNoise');
+const audioBoxEl = document.getElementById('audioBox');
 const timeCounterEl = document.getElementById('timeCounter');
 const startButtonEl = document.getElementById('startButton');
 const stopButtonEl = document.getElementById('stopButton');
@@ -10,6 +11,11 @@ const timeRun = Run * 1000;
 const timeRest = Rest * 1000;
 
 // fxns here
+
+//hides the audioBox after clicked
+const audioBox = () => {
+    audioBoxEl.setAttribute("hidden", true);
+}
 
 //sets up the running timer
 const runTime = () => {
@@ -84,3 +90,4 @@ const restTime = () => {
 };
 
 startButtonEl.addEventListener("click", runTime);
+audioEl.addEventListener("play", audioBox);
