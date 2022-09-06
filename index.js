@@ -5,7 +5,7 @@ const startButtonEl = document.getElementById('startButton');
 const stopButtonEl = document.getElementById('stopButton');
 const headerEl = document.getElementById('header');
 
-const Run = 5;
+const Run = 30;
 const Rest = 60;
 const timeRun = Run * 1000;
 const timeRest = Rest * 1000;
@@ -23,7 +23,7 @@ const runTime = () => {
     headerEl.textContent = `Run😈`;
 
     //sets up the duration of how long this alarm has been running for
-    var durationRun = 0;
+    var durationRun = 1;
 
     //executes the alarm and starts the rest timer
     const runNote = () => {
@@ -59,7 +59,7 @@ const restTime = () => {
     headerEl.textContent = `Rest😫`;
 
     //sets up the duration of how long this alarm has been running for
-    var durationRest = 0;
+    var durationRest = 1;
 
     //executes the alarm action and starts up the run timer
     const restNote = () => {

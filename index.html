@@ -8,17 +8,11 @@
     <title>30-60 Timer</title>
 </head>
 <body>
-    <button id="audioBox">
-    <audio id="notificationNoise" controls>
-        <source src="https://docs.google.com/uc?export=open&id=1-ui6mO289fs1-8VyYg__8GZpn1RJwR9Q" type="audio/mpeg">
-        <source src="https://docs.google.com/uc?export=open&id=17pD-_vB19qVD74kPbfoRi26aBjPGochR" type="audio/wav">
-        <source src="./assets/lego yoda death.mp3" type="audio/mpeg">
-        <source src="./assets/lego yoda death.wav" type="audio/wav">
-    </audio>
-</button>
+
 
     <section class="w-screen h-screen grid items-center">
     <article class="flex flex-col">
+
     <!--Navbar-->
     <nav class="bg-red-500 rounded-lg mx-8 my-2 p-4">
         <!--Title/Type of Timer-->
@@ -39,6 +33,15 @@
             <!--Stop Button-->
             <button id="stopButton" class="flex-1 bg-red-600 text-center mr-8 ml-4 rounded-lg text-2xl font-mono font-extrabold text-rose-100">STOP</button>
         </section>
+    </section>
+
+    <section id="audioBox" class="mx-auto">
+        <audio id="notificationNoise" controls>
+            <source src="https://docs.google.com/uc?export=open&id=1-ui6mO289fs1-8VyYg__8GZpn1RJwR9Q" type="audio/mpeg">
+            <source src="https://docs.google.com/uc?export=open&id=17pD-_vB19qVD74kPbfoRi26aBjPGochR" type="audio/wav">
+            <source src="./assets/lego yoda death.mp3" type="audio/mpeg">
+            <source src="./assets/lego yoda death.wav" type="audio/wav">
+        </audio>
     </section>
 
     </article>
